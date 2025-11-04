@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sroff-page.vercel.app/sitemap.xml
