@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_SR_Off_</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-code">&lt;</span><span class="logo-text">_SR_Off_</span><span class="logo-code">/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="code-rain"></div>
+            <canvas id="particles-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-profile">
+                <img src="pdp.jpg" alt="Photo de profil" class="profile-image">
+            </div>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn red"></span>
+                        <span class="terminal-btn yellow"></span>
+                        <span class="terminal-btn green"></span>
+                    </div>
+                    <span class="terminal-title">terminal</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Bonjour, je suis</span>
+                <span class="title-name"><span class="code-tag">&lt;</span>Développeur Full Stack<span class="code-tag">/&gt;</span></span>
+            </h1>
+            <p class="hero-subtitle">Je transforme des idées en <span class="highlight">code</span> et des <span class="highlight">code</span> en expériences</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                À propos de moi
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionné par le développement web et les technologies modernes, je crée des applications performantes et intuitives.</p>
+                    <p>Mon parcours m'a permis de maîtriser différents langages et frameworks, toujours en quête d'apprendre de nouvelles technologies.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Projets</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Années d'expérience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Clients satisfaits</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-image-container">
+                        <img src="pdp.jpg" alt="Photo de profil" class="about-profile-image">
+                    </div>
+                    <div class="code-block">
+                        <div class="code-line">
+                            <span class="code-keyword">const</span> 
+                            <span class="code-variable">développeur</span> 
+                            <span class="code-operator">=</span> 
+                            <span class="code-brace">{</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">  pseudo</span><span class="code-operator">:</span> 
+                            <span class="code-string">'_SR_Off_'</span><span class="code-operator">,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">  passion</span><span class="code-operator">:</span> 
+                            <span class="code-string">'Code & Innovation'</span><span class="code-operator">,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">  langages</span><span class="code-operator">:</span> 
+                            <span class="code-brace">[</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-string">    'React'</span><span class="code-operator">,</span> 
+                            <span class="code-string">'TypeScript'</span><span class="code-operator">,</span>
+                            <span class="code-string">'Node.js'</span><span class="code-operator">,</span>
+                            <span class="code-string">    'Python'</span><span class="code-operator">,</span> 
+                        </div>
+                        <div class="code-line">
+                            <span class="code-string">    'CSS3'</span><span class="code-operator">,</span> 
+                            <span class="code-string">'HTML5'</span><span class="code-operator">,</span> 
+                            <span class="code-string">'JavaScript'</span><span class="code-operator">, </span><span class="code-string">and more...</span>
+                        </div>
+                        <div class="code-line">
+
+                        </div>
+                        <div class="code-line">
+                            <span class="code-brace">  ]</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-brace">}</span><span class="code-operator">;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Compétences
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">HTML5</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Outils & DevOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>Stack Technologique</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon" data-tech="React">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                    </div>
+                    <div class="tech-icon" data-tech="Node.js">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                    </div>
+                    <div class="tech-icon" data-tech="Python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                    </div>
+                    <div class="tech-icon" data-tech="TypeScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                    </div>
+                    <div class="tech-icon" data-tech="HTML5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                    </div>
+                    <div class="tech-icon" data-tech="JavaScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    </div>
+                    <div class="tech-icon" data-tech="CSS3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                    </div>
+                    <div class="tech-icon" data-tech="Git">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Projets
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sroff-browser.vercel.app/" target="_blank" class="project-link">🌐 Live</a>
+                                <a href="https://github.com/SROff23712/_SR_Off_-Browser" target="_blank"class="project-link">📂 Code</a>
+                            </div>
+                        </div>
+                        <div class="project-code-preview">
+                            <div class="code-line-mini">
+                                <span class="code-keyword">const</span> 
+                                <span class="code-variable">browser</span> 
+                                <span class="code-operator">=</span> 
+                                <span class="code-string">'_SR_Off_'</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>_SR_Off_ Browser</h3>
+                        <p>Moteur de recherche personnalisable avec interface moderne et personnalisation avancée</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SROff23712/Blob-Downloader-m3u8" target="_blank" class="project-link">📂 Code</a>
+                            </div>
+                        </div>
+                        <div class="project-code-preview">
+                            <div class="code-line-mini">
+                                <span class="code-keyword">def</span> 
+                                <span class="code-variable">download_m3u8</span><span class="code-brace">()</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>_SR_Off_ Blob Downloader</h3>
+                        <p>Convertisseur m3u8 vers MP4 avec téléchargement automatique et gestion des fichiers</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>m3u8</span>
+                            <span>HLS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SROff23712/JinxBot" target="_blank" class="project-link">📂 Code</a>
+                            </div>
+                        </div>
+                        <div class="project-code-preview">
+                            <div class="code-line-mini">
+                                <span class="code-keyword">class</span> 
+                                <span class="code-variable">JinxBot</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>JinxBot</h3>
+                        <p>Bot Discord développé en Python avec fonctionnalités interactives</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Discord.py</span>
+                            <span>Bot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Contact
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Travaillons ensemble !</h3>
+                    <p>Je suis toujours ouvert à discuter de nouveaux projets ou opportunités.</p>
+                    <div class="contact-links">
+                        <a href="mailto:sroff2371222@gmail.com" class="contact-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_(2020).svg/512px-Gmail_icon_(2020).svg.png" alt="Gmail" class="contact-icon gmail-icon">
+                            <span>sroff2371222@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/SROff23712" class="contact-link" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="contact-icon github-icon">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://discord.gg/yjnpydUv8y" class="contact-link" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/1818px-Discord_Logo_sans_texte.svg.png" alt="Discord" class="contact-icon discord-icon">
+                            <span>Discord</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); return false;">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <div id="formMessage" class="form-message"></div>
+                    <button type="button" class="btn btn-primary" id="submitBtn">
+                        <span class="btn-text">Envoyer</span>
+                        <span class="btn-loader" style="display: none;"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 _SR_Off_. Code avec <span class="heart">❤️</span></p>
+            <div class="footer-links">
+                <a href="https://github.com/SROff23712">GitHub</a>
+                <a href="https://discord.gg/yjnpydUv8y" target="_blank">Discord</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
